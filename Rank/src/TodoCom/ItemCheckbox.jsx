@@ -21,7 +21,7 @@ export function ItemCheckbox(props) {
         Tmp[Index] = Tmp[Index] === 0 ? 1 : 0;
         activateListItems(Tmp);
         // https://sjtu.yydbxx.cn/vote/api
-        fetch('https://sjtu.yydbxx.cn/vote/api/data', {
+        fetch('http://127.0.0.1:8000/data', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ export function ItemCheckbox(props) {
           })
           .then(result => {
             // https://sjtu.yydbxx.cn/vote/api
-            fetch('https://sjtu.yydbxx.cn/vote/api/data', {
+            fetch('http://127.0.0.1:8000/data', {
               method: 'POST',
               body: JSON.stringify({
                 ListItems: result.ListItems,

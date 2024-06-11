@@ -46,7 +46,7 @@ export function HeadButton(props) {
             })
             .then(result => {
               // https://sjtu.yydbxx.cn/vote/api
-              fetch('https://sjtu.yydbxx.cn/vote/api/data', {
+              fetch('http://127.0.0.1:8000/data', {
                 method: 'POST',
                 body: JSON.stringify({
                   ListItems: result.ListItems,

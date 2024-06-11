@@ -3,7 +3,7 @@
 # 定义要搜索的目录
 SEARCH_DIR="./"
 # 定义要搜索的短语
-SEARCH_PHRASE="Searching..."
+SEARCH_PHRASE="sjtu.yydbxx.cn"
 
 # 使用find和grep搜索包含短语的文件
 echo "Searching word '${SEARCH_PHRASE}' in file..."

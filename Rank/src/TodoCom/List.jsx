@@ -24,7 +24,7 @@ export function List(props) {
       hideListItems([1, ...ListDisplay]);
       setItemsCount(prev => prev + 1);
       // https://sjtu.yydbxx.cn/vote/api
-      fetch('https://sjtu.yydbxx.cn/vote/api/data', {
+      fetch('http://127.0.0.1:8000/data', {
         method: 'POST',
         body: JSON.stringify({
           ListItems: [newText, ...ListItems],
