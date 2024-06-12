@@ -17,7 +17,7 @@ pnpm install
 Start the dev server:
 
 ```bash
-pnpm dev
+pnpm run dev
 ```
 
 Enable optional features or add a new entry:
@@ -45,3 +45,7 @@ For more information, see the [Modern.js documentation](https://modernjs.dev/en)
 For now, `Collect` part is almost done. While `Rank` part is not fully done yet. Generally, `Collect` part is used to collect data and `Rank` part is used to show data.
 
 At the moment, we only use `Collect` part.
+
+## Usage
+
+To edit the names, please go to `./Collect/src/RankCom/Candidate.jsx`.
