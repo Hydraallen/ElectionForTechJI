@@ -34,7 +34,7 @@ export function HeadButton(props) {
             setItemsCount(Cnt);
           }
           activateListItems(Tmp);
-          fetch('https://sjtu.yydbxx.cn/vote/api/data', {
+          fetch('https://localhost/vote/api/data', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -45,8 +45,8 @@ export function HeadButton(props) {
               return res.json();
             })
             .then(result => {
-              // https://sjtu.yydbxx.cn/vote/api
-              fetch('https://sjtu.yydbxx.cn/vote/api/data', {
+              // https://localhost/vote/api
+              fetch('https://localhost/vote/api/data', {
                 method: 'POST',
                 body: JSON.stringify({
                   ListItems: result.ListItems,

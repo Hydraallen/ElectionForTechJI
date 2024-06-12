@@ -30,7 +30,7 @@ export function ItemChange(props) {
 }
 
 function Update(Tmp) {
-  fetch('https://sjtu.yydbxx.cn/vote/api/data', {
+  fetch('https://localhost/vote/api/data', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -41,8 +41,8 @@ function Update(Tmp) {
       return res.json();
     })
     .then(result => {
-      // https://sjtu.yydbxx.cn/vote/api
-      fetch('https://sjtu.yydbxx.cn/vote/api/data', {
+      // https://localhost/vote/api
+      fetch('https://localhost/vote/api/data', {
         method: 'POST',
         body: JSON.stringify({
           ListItems: Tmp,

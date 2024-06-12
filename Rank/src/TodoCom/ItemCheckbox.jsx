@@ -20,7 +20,7 @@ export function ItemCheckbox(props) {
         const Tmp = ListActivation;
         Tmp[Index] = Tmp[Index] === 0 ? 1 : 0;
         activateListItems(Tmp);
-        // https://sjtu.yydbxx.cn/vote/api
+        // https://localhost/vote/api
         fetch('http://127.0.0.1:8000/data', {
           method: 'GET',
           headers: {
@@ -32,7 +32,7 @@ export function ItemCheckbox(props) {
             return res.json();
           })
           .then(result => {
-            // https://sjtu.yydbxx.cn/vote/api
+            // https://localhost/vote/api
             fetch('http://127.0.0.1:8000/data', {
               method: 'POST',
               body: JSON.stringify({

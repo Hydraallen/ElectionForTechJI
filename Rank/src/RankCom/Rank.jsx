@@ -5,7 +5,7 @@ async function getUpdate(setVoteCount) {
   let tmpListItems = [];
   let tmpListActivation = [];
   let tmpCandidateList = [];
-  // https://sjtu.yydbxx.cn/vote/api
+  // https://localhost/vote/api
   const res = await fetch('http://127.0.0.1:8000/data', {
     method: 'GET',
     headers: {

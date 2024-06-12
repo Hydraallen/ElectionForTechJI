@@ -23,8 +23,8 @@ export function List(props) {
       activateListItems([1, ...ListActivation]);
       hideListItems([1, ...ListDisplay]);
       setItemsCount(prev => prev + 1);
-      // https://sjtu.yydbxx.cn/vote/api
-      fetch('https://sjtu.yydbxx.cn/vote/api/data', {
+      // https://localhost/vote/api
+      fetch('https://localhost/vote/api/data', {
         method: 'POST',
         body: JSON.stringify({
           ListItems: [newText, ...ListItems],
