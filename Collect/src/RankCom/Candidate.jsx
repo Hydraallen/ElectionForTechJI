@@ -6,14 +6,13 @@ import { HeadInput } from './HeadInput';
 export function Candidate(props) {
   const { setCandidateList } = props;
   const [ListItems, setListItems] = useState([
-    '耿子聪',
-    '沈御骞',
-    '宋沛霖',
-    '孙康宇',
-    '张宇昊',
+    '耿子聪 Geng Zicong',
+    '沈御骞 Shen Yuqian',
+    '宋沛霖 Song Peilin',
+    '孙康宇 Sun Kangyu',
   ]);
-  const [ListActivation, activateListItems] = useState([1, 1, 1, 1,1,]);
-  const [ListDisplay, hideListItems] = useState([1, 1, 1, 1,1,]);
+  const [ListActivation, activateListItems] = useState([1, 1, 1, 1,]);
+  const [ListDisplay, hideListItems] = useState([1, 1, 1, 1,]);
   const [ItemsCount, setItemsCount] = useState(5);
   const [ListDisplayMode, setDisplayMode] = useState([0, 1]);
   const [newText, setNewText] = useState('');

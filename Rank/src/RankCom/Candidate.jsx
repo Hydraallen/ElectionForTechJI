@@ -10,7 +10,6 @@ export function Candidate(props) {
     '沈御骞',
     '宋沛霖',
     '孙康宇',
-    '张宇昊',
   ]);
   const [ListActivation, activateListItems] = useState([1, 1, 1, 1, ]);
   const [ListDisplay, hideListItems] = useState([1, 1, 1, 1, ]);

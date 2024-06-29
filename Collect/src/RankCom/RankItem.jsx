@@ -8,7 +8,7 @@ export function RankItem(props) {
         id={`RankItem${Name}`}
         style={{
           margin: '10px',
-          height: '80px',
+          height: '200px',
           display: 'flex',
           alignItems: 'center',
           position: 'absolute',
@@ -44,7 +44,7 @@ export function RankItem(props) {
             height: '30px',
             transition: '0.2s',
             position: 'absolute',
-            top: `${Index * 80 + 245}px`,
+            top: `${Index * 80 + 305}px`,
             textAlign: 'left',
             fontSize: '0.5em',
             color: 'blue',
