@@ -13,7 +13,7 @@ export function Candidate(props) {
   ]);
   const [ListActivation, activateListItems] = useState([1, 1, 1, 1, ]);
   const [ListDisplay, hideListItems] = useState([1, 1, 1, 1, ]);
-  const [ItemsCount, setItemsCount] = useState(5);
+  const [ItemsCount, setItemsCount] = useState(4);
   const [ListDisplayMode, setDisplayMode] = useState([0, 1]);
   const [newText, setNewText] = useState('');
   return (
