@@ -46,6 +46,12 @@ For now, `Collect` part is almost done. While `Rank` part is not fully done yet.
 
 At the moment, we only use `Collect` part.
 
-## Usage
+## Development
 
 To edit the names, please go to `./Collect/src/RankCom/Candidate.jsx`.
+
+## Usage
+
+First, initialize the candidates by selecting who will participate in this round.
+
+Next, you can count the votes by entering them one by one. **Please note that you must use English commas as separators.**
